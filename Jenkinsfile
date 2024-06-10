@@ -40,9 +40,9 @@ pipeline {
         }
     }
         post { 
-            
+
         always { 
-            echo 'I will always say Hello again!'
+            echo 'I will always come'
         }
           failure { 
             echo 'I from failure'
