@@ -39,4 +39,18 @@ pipeline {
             }
         }
     }
+        post { 
+            
+        always { 
+            echo 'I will always say Hello again!'
+        }
+          failure { 
+            echo 'I from failure'
+        }
+          success { 
+            echo 'I from success'
+        }
+
+    }
+    
 }
