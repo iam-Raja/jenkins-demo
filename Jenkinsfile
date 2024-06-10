@@ -1,8 +1,10 @@
 pipeline {
-   agent any
-    //options {
+   agent {
+    labels = agent 1
+   }
+    options {
         // Timeout counter starts AFTER agent is allocated
-       // timeout(time: 1, unit: 'SECONDS')
+        timeout(time: 1, unit: 'SECONDS')
     }
     stages {
         stage('Example') {
@@ -10,5 +12,5 @@ pipeline {
                 echo 'Hello World'
             }
         }
-   // }
+    }
 }
