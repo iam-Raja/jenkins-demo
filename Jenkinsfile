@@ -12,12 +12,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
-    }
-    stages {
+    }  
         stage('deploy') {
             steps {
                sh 'sleep 10'
             }
         }
-    }
+    
 }
